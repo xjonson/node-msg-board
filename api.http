@@ -1,0 +1,28 @@
+
+### 登录
+POST http://localhost:4000/api/user/login HTTP/1.1
+content-type: application/json
+
+{
+  "name": "test",
+  "password": "123456",
+  "captcha": "test"
+}
+
+
+### 获取验证码
+POST http://localhost:4000/api/captcha HTTP/1.1
+content-type: application/json
+
+
+
+
+### 回复留言 
+PUT http://localhost:4000/api/msg/5bfe8960afc6e76d390de0b5 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNDQzNGIxN2QxM2Q0NDI0ZTIwOWQ1NSIsInBhc3N3b3JkIjoiJDJhJDEwJFJudEFQZlZpVmFaQ0hHYk0xOWhmUGVEb1lGbkFPNGhuZ1lSWjBRSVZnbS5GQjJHOVZpT1F5IiwiaWF0IjoxNTQ4MTQwNjc2LCJleHAiOjE1NDgxNDQyNzZ9.J8VWAzcRqlYBivzxtkzktEWY8S3uD296_AAtwTdjzQ8
+content-type: application/json;charset=UTF-8
+
+{
+  "uid": "5c4434b17d13d4424e209d55",
+  "content": "1这是一条回复留言"
+}
